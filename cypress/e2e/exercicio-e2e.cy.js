@@ -65,7 +65,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     cy.get('.woocommerce-message > .button').click()
     cy.get('.checkout-button').click()
 
-    //Preenchendo os Dados para o checkout e finaliando a compra
+    //Preenchendo os Dados para o checkout e finalizando a compra
     cy.dados(checkout.endereço, checkout.cidade, checkout.estado, checkout.cep, checkout.telefone)
     cy.get('#payment_method_cod').click()
     cy.get('#terms').click()
